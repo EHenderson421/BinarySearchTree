@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTreeProject
 {
-    class SearchTree
+    class Tree
     {
         // Member Variables
 

@@ -9,7 +9,8 @@ namespace BinarySearchTreeProject
     class Node
     {
         // Member Variables
-        public Node next;
+        public Node left;
+        public Node Right;
         public int data;
 
 
