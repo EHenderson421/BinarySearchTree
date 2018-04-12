@@ -10,7 +10,7 @@ namespace BinarySearchTreeProject
     {
         // Member Variables
         public Node left;
-        public Node Right;
+        public Node right;
         public int data;
 
 
@@ -23,6 +23,8 @@ namespace BinarySearchTreeProject
         public Node(int data)
         {
             this.data = data;
+            //left = null;
+            //Right = null;
         }
 
         //Member Methods
