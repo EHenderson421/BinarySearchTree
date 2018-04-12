@@ -9,12 +9,20 @@ namespace BinarySearchTreeProject
     class Node
     {
         // Member Variables
-
+        public Node next;
+        public int data;
 
 
         //Constructor
+        public Node()
+        {
 
+        }
 
+        public Node(int data)
+        {
+            this.data = data;
+        }
 
         //Member Methods
 
