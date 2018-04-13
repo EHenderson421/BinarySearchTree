@@ -74,5 +74,9 @@ namespace BinarySearchTreeProject
         }
 
 
+        public bool Search(int data)
+        {
+
+        }
     }
 }
