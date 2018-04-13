@@ -82,20 +82,22 @@ namespace BinarySearchTreeProject
                 if (current.data == searchData)
                 {
                     Console.WriteLine("You are searching for: " + searchData);
-                    Console.WriteLine(" We Found: " + current.data);
+                    Console.WriteLine("We Found: " + current.data);
                     Console.ReadLine();
                     return true;
                 }
 
                 else if (searchData < current.data)
                 {
-                    Console.WriteLine("Left");
+                    Console.WriteLine("We Found: " + current.data);
+                    Console.WriteLine(searchData + " Is less than " + current.data + " We will now move 'Left'");
                     current = current.left;
                 }
 
                 else
                 {
-                    Console.WriteLine("Right");
+                    Console.WriteLine("We Found: " + current.data);
+                    Console.WriteLine(searchData + " Is greater than " + current.data + " We will now move 'Right'");
                     current = current.right;
                 }
             }
@@ -103,14 +105,14 @@ namespace BinarySearchTreeProject
             if (current.data == searchData)
             {
                 Console.WriteLine("You are searching for: " + searchData);
-                Console.WriteLine(" We Found: " + current.data);
+                Console.WriteLine("We Found: " + current.data);
                 Console.ReadLine();
                 return true;
             }
 
             else
             {
-                Console.WriteLine("Value not here");
+                Console.WriteLine("Value not found");
                 return false;
             }
         }

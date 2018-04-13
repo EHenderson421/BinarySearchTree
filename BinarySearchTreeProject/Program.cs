@@ -17,7 +17,13 @@ namespace BinarySearchTreeProject
             myTree.Add(-10);
             myTree.Add(20);
             myTree.Add(70);
-            myTree.Search(-10);
+            myTree.Add(49);
+            myTree.Add(80);
+            myTree.Add(505);
+            myTree.Add(124);
+            myTree.Add(12);
+            myTree.Add(74);
+            myTree.Search(12);
             Console.ReadLine();
 
         }
