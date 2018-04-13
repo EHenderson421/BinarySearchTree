@@ -81,7 +81,8 @@ namespace BinarySearchTreeProject
             {
                 if (current.data == searchData)
                 {
-                    Console.WriteLine("Value is here");
+                    Console.WriteLine("You are searching for: " + searchData);
+                    Console.WriteLine(" We Found: " + current.data);
                     Console.ReadLine();
                     return true;
                 }
@@ -101,7 +102,8 @@ namespace BinarySearchTreeProject
 
             if (current.data == searchData)
             {
-                Console.WriteLine("Value is here");
+                Console.WriteLine("You are searching for: " + searchData);
+                Console.WriteLine(" We Found: " + current.data);
                 Console.ReadLine();
                 return true;
             }
