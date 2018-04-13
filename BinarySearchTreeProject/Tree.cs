@@ -74,9 +74,43 @@ namespace BinarySearchTreeProject
         }
 
 
-        public bool Search(int data)
+        public bool Search(int searchData)
         {
+            current = head;
+            while (current.left != null || current.right != null)
+            {
+                if (current.data == searchData)
+                {
+                    Console.WriteLine("Value is here");
+                    Console.ReadLine();
+                    return true;
+                }
 
+                else if (searchData < current.data)
+                {
+                    Console.WriteLine("Left");
+                    current = current.left;
+                }
+
+                else
+                {
+                    Console.WriteLine("Right");
+                    current = current.right;
+                }
+            }
+
+            if (current.data == searchData)
+            {
+                Console.WriteLine("Value is here");
+                Console.ReadLine();
+                return true;
+            }
+
+            else
+            {
+                Console.WriteLine("Value not here");
+                return false;
+            }
         }
     }
 }
