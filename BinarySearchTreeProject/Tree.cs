@@ -46,6 +46,23 @@ namespace BinarySearchTreeProject
 
         public Node Traverse(Node current,  Node toAdd)
         {
+            while (current != null)
+            {
+                if (current.data > toAdd.data && current.left != null)
+                {
+                    current = current.left;
+                }
+
+                else if (current.data <= toAdd.data && current.right != null)
+                {
+                    current = current.right;
+                }
+
+                else
+                {
+                    return current;
+                }
+            }
             return current;
         }
 
