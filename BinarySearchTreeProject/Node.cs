@@ -23,8 +23,7 @@ namespace BinarySearchTreeProject
         public Node(int data)
         {
             this.data = data;
-            //left = null;
-            //Right = null;
+            
         }
 
         //Member Methods
