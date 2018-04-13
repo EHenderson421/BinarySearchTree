@@ -12,11 +12,18 @@ namespace BinarySearchTreeProject
         Node head;
         Node current;
 
+
         //Constructor
+        public Tree()
+        {
+
+        }
+
         public Tree(int data)
         {
             head = new Node(data);
         }
+                
 
         //Member Methods
         public void Add(int data)
