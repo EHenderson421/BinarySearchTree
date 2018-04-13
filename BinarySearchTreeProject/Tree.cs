@@ -90,14 +90,16 @@ namespace BinarySearchTreeProject
                 else if (searchData < current.data)
                 {
                     Console.WriteLine("We Found: " + current.data);
-                    Console.WriteLine(searchData + " Is less than " + current.data + " We will now move 'Left'");
+                    Console.WriteLine(searchData + " Is less than " + current.data);
+                    Console.WriteLine("We will now move 'Left'");
                     current = current.left;
                 }
 
                 else
                 {
                     Console.WriteLine("We Found: " + current.data);
-                    Console.WriteLine(searchData + " Is greater than " + current.data + " We will now move 'Right'");
+                    Console.WriteLine(searchData + " Is greater than " + current.data);
+                    Console.WriteLine("We will now move 'Right'");
                     current = current.right;
                 }
             }
